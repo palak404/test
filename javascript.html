@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>javascript tutorial</title>
+       
+
+    </head>
+    <body>
+        <form method="post">
+            <input type="text" id="txtName" placeholder="enter your name"><br>
+
+            <input type="submit" value="display your name" onclick="myFunction()"></button>
+
+            
+        </form>
+        <hr>
+        <hr>
+        <input type="text" id="txtNum1" placeholder="Enter num1"><br>
+        <input type="text" id="num2" placeholder="Enter num2"><br>
+        <button type="submit" onclick="add()">+</button>
+        <button type="submit" onclick="mul()">*</button>
+        <button type="submit" onclick="sub()">-</button>
+        <button type="submit" onclick="div()">/</button>
+        <button type="submit" onclick="modul()">%</button>
+        <button type="submit" onclick="date()">display date </button>
+        <hr>
+        <p id="demo"></p>
+        <hr>
+        <br>
+        
+            
+            
+            
+
+        
+        
+
+        
+    </body>
+    <script>
+   function myFunction()
+   {
+  a=document.getElementById("tex").value;
+        alert(a);
+
+   }
+   function add()
+   {
+    var a=document.getElementById("num1").value;
+    var b=document.getElementById("num2").value;
+   res= Number(a)+Number(b);
+    
+    document.getElementById("demo").innerHTML=res;
+    
+
+   }
+   function sub()
+   {
+    var a=document.getElementById("num1").value;
+    var b=document.getElementById("num2").value;
+    res=a-b;
+    document.getElementById("demo").innerHTML=res;
+
+   }
+   function div()
+   {
+    var a=document.getElementById("num1").value;
+    var b=document.getElementById("num2").value;
+    res=a/b;
+    document.getElementById("demo").innerHTML=res;
+
+   }
+   function mul()
+   {
+    var a=document.getElementById("num1").value;
+    var b=document.getElementById("num2").value;
+    res=a*b
+    document.getElementById("demo").innerHTML=res;
+   }
+   function modul()
+   {
+    var a=document.getElementById("num1").value;
+    var b=document.getElementById("num2").value;
+    res=a%b
+    document.getElementById("demo").innerHTML=res;
+
+   }
+   function date()
+   {
+   alert(Date()); 
+   }
+   
+
+
+       
+    </script>
+</html>
